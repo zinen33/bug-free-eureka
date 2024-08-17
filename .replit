@@ -1,0 +1,69 @@
+language = "bash"
+run = "npm start"
+entrypoint = "main.sh"
+
+[languages]
+
+[languages.bash]
+pattern = "**/{*.sh,*.bash}"
+
+[languages.bash.languageServer]
+start = "bash-language-server start"
+
+[nix]
+channel = "stable-22_11"
+
+[deployment]
+run = ["sh", "-c", "bash main.sh"]
+
+[[ports]]
+localPort = 3000
+externalPort = 3000
+
+[[ports]]
+localPort = 35463
+externalPort = 8081
+
+[[ports]]
+localPort = 35531
+externalPort = 80
+
+[[ports]]
+localPort = 37401
+externalPort = 8099
+
+[[ports]]
+localPort = 39445
+externalPort = 3003
+
+[[ports]]
+localPort = 40253
+externalPort = 6000
+
+[[ports]]
+localPort = 41137
+externalPort = 8080
+
+[[ports]]
+localPort = 42361
+externalPort = 8008
+
+[[ports]]
+localPort = 42651
+externalPort = 3002
+
+[[ports]]
+localPort = 45375
+externalPort = 5000
+
+[[ports]]
+localPort = 45691
+externalPort = 3001
+
+[[ports]]
+localPort = 45887
+externalPort = 4200
+
+[[ports]]
+localPort = 46277
+externalPort = 5173
